@@ -2,12 +2,14 @@
 	[rowHover]="true" [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [loading]="loading"
 	[paginator]="true"
 	currentPageReportTemplate="Showing &#123;first&#125; to &#123;last&#125; of &#123;totalRecords&#125; entries"
-	[filterDelay]="0" [globalFilterFields]="['name','country.name','representative.name','status']">
+	[filterDelay]="0" [globalFilterFields]="['tool','active','action']">
 	<ng-template pTemplate="caption">
-		List of Cars
+		List of Tools
 		<div class="ui-table-globalfilter-container">
 			<input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" />
+      <button pButton type="button" class="ui-button-secondary" icon="pi pi-cog"></button>
         </div>
+        	
 	</ng-template>
 	<ng-template pTemplate="header">
 		<tr>
@@ -28,7 +30,7 @@
 				<input pInputText type="text" (input)="dt.filter($event.target.value, 'active', 'contains')" placeholder="Search by Status" class="ui-column-filter">
       </th>
 			<th>
-				<input pInputText type="text" (input)="onActivityChange($event)" placeholder="Minimum" class="ui-column-filter" >
+				
       </th>
 			<th></th>
 		</tr>
