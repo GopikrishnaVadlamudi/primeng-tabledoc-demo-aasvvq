@@ -19,6 +19,8 @@ import {InputTextModule} from 'primeng/inputtext';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {DropdownModule} from 'primeng/dropdown';
 
+import {InputSwitchModule} from 'primeng/inputswitch';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {DropdownModule} from 'primeng/dropdown';
     InputTextModule,
     ProgressBarModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    InputSwitchModule
   ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ],
