@@ -91,10 +91,12 @@
 
     .ui-table-globalfilter-container {
         float: right;
-    
+        margin: 10px 10px;
+         
         input {
             width: 200px;
         }
+
     }
 
     .ui-datepicker {
@@ -188,4 +190,11 @@
             }
         }
     }
+}
+.float-right {
+  float:right;
+}
+
+.tool-master-title {
+  margin:10px;
 }
