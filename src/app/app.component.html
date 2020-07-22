@@ -1,6 +1,6 @@
-<div class="tool-master-title"> List of Tools</div>
+<div class="margin-tb"> List of Tools</div>
 
-<div *ngIf="showAddition">
+<div *ngIf="showAddition" class="margin-tb">
 	<div>
 		<label>Tool Name:</label>
 		<input type="text" pInputText [(ngModel)]="property"/>
@@ -11,7 +11,7 @@
 		</div>
 	</div>
 
-	<div class="ui-table-globalfilter-container">
+	<div class="ui-table-globalfilter-container margin-tb">
 		<input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" />
 
 		<button pButton type="button" class="ui-button-secondary float-right" icon="pi pi-cog" (click)="showAddition = !showAddition"></button>
